@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+          <h2>Generate a secure password</h2>
+          <p>User our online password generate to instality create a secure, random password.</p>
+          <div class="box">
+               <input type="text" class="password-random">
+               <i class="fa-regular fa-copy fa-lg"></i>
+               <i class="fa-solid fa-rotate fa-lg"></i>
+          </div>
+          <div class="box2">
+               <h2>Customize your password</h2>
+               <hr>
+               <p>Password Length</p>
+               <div class="block1">
+                     <div class="block">
+                         <input type="number" class="password-length-input" value="10" min="5" max="30">
+                         <input type="range" class="password-length-range" min="5" max="30" value="10">
+                    </div>
+               <div class="text-pass">
+                    <label for=""><input type="checkbox" id="checkmark" value="upperC" >Uppercase</label>
+                    <label for=""><input type="checkbox" id="checkmark" value="lowerC" checked>Lowercase</label>
+                    <label for=""><input type="checkbox" id="checkmark" value="numC" checked>Numbers</label>
+                    <label for=""><input type="checkbox" id="checkmark" value="symbolC">Symbols</label>
+               </div>
+               </div>
+          </div>
+               <div class="modal-pass hide">
+                    <div>
+                         <p>Ваш пароль скопійовано!</p>
+                    </div>
+               </div>
+
+          <button class="btn">Copy Password</button>
+     </div>
+
+
+
+     <script src="script.js"></script>
+</body>
+</html>
